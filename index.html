@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        .box-img{
+    width: 50%;
+    height: 150px;
+    }
+    </style>
+
+</head>
+
+<body>
+   <h1 class="text-6xl text-center mb-5">All flower </h1>
+   <div>
+
+    <!-- card container -->
+    <div class="flex-1 col-span-3 gap-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4  mt-10">
+        <!-- card-1 -->
+        <div class="card w-9/12 bg-base-100 shadow-xl">
+            <figure><img class="box-img" src="./image/featured1.png" alt="flower" /></figure>
+            <div class="card-body">
+              <h2 class="card-title text-4xl">Snow White</h2>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis, aliquam.</p>
+              <p>Price: 50 $</p>
+             
+                
+                <button onclick="handleClickBtn(this)" class="btn btn-primary">Buy Now</button>
+             
+            </div>
+          </div>
+        <!-- card-2 -->
+        <div class="card w-9/12 bg-base-100 shadow-xl">
+            <figure><img class="box-img" src="./image/featured2.png" alt="flower" /></figure>
+            <div class="card-body">
+              <h2 class="card-title text-4xl">Blue White</h2>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis, aliquam.</p>
+              <p>Price: 40 $</p>
+              
+                
+                <button onclick="handleClickBtn(this)" class="btn btn-primary">Buy Now</button>
+              
+            </div>
+          </div>
+        <!-- card-3 -->
+        <div class="card w-9/12 bg-base-100 shadow-xl">
+            <figure><img class="box-img" src="./image/featured3.png" alt="flower" /></figure>
+            <div class="card-body">
+              <h2 class="card-title text-4xl">Black White</h2>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis, aliquam.</p>
+              <p>Price: 30 $</p>
+            
+                
+                <button onclick="handleClickBtn(this)" class="btn btn-primary">Buy Now</button>
+              
+            </div>
+          </div>
+
+          <!-- 4 -->
+          <div class="right-side-container col-4 text-center ">
+            <h4 class="text-2xl">Code: Hero</h4>
+  
+            <div class="selected-items" id="selected-items"></div>
+            <div class="cart-box">
+              <h6 class="text-2xl">total: <span id="total">00</span> tk</h6>
+              <h6 class="text-xl">discount: <span id="discount">00</span> tk</h6>
+              <hr />
+              <h5 class="text-2xl">grand Total: <span id="GTotal">00</span> tk</h5>
+            </div>
+  
+            <div class="coupon"></div>
+          </div>
+        </div>
+    </div>
+    <div>
+
+    </div>
+   </div>
+
+
+    <script src="./test.js"></script>
+</body>
+
+</html>
